@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Konversi Mata Uang</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Aplikasi Konversi Mata Uang</h2>
+        <form id="currency-form">
+            <div>
+                <label for="amount">Jumlah:</label>
+                <input type="number" id="amount" placeholder="Masukkan jumlah">
+            </div>
+
+            <div>
+                <label for="from-currency">Dari Mata Uang:</label>
+                <select id="from-currency">
+                    <option value="USD">Dolar AS (USD)</option>
+                    <option value="BHD">Bahraini Dinar (BHD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="JPY">Yen Jepang (JPY)</option>
+                    <option value="IDR">Rupiah Indonesia (IDR)</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="to-currency">Ke Mata Uang:</label>
+                <select id="to-currency">
+                    <option value="IDR">Rupiah Indonesia (IDR)</option>
+                    <option value="USD">Dolar AS (USD)</option>
+                    <option value="BHD">Bahraini Dinar (BHD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="JPY">Yen Jepang (JPY)</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="convertCurrency()">Konversi</button>
+        </form>
+
+        <div id="result">
+            <h3>Hasil Konversi:</h3>
+            <p id="conversion-result"></p>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
